@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script id="wg_fwdg_500910_3_1557502656798">
+    function addSpot(spot) {
+      var arg = [`s=${spot}`,"m=3","uid=wg_fwdg_500910_3_1557502656798","wj=kmh","tj=c","odh=8","doh=24","fhours=72","vt=fcst_graph"];
+      var script = document.createElement("script");
+      var tag = document.getElementsByTagName("script")[0];
+      script.src = "https://www.windguru.cz/js/widget.php?"+(arg.join("&"));
+      tag.parentNode.insertBefore(script, tag);
+    }
+    (function (window, document) {
+      var loader = function () {
+      addSpot('692108');
+      addSpot('112');
+      };
+      window.addEventListener ? window.addEventListener("load", loader, false) : window.attachEvent("onload", loader);
+    })(window, document);
+    </script>
+
+  </body>
+</html>
